@@ -12,7 +12,7 @@ const Navbar = () => {
 
   useEffect(() => {
     if (searchQuery.trim() !== "") {
-      fetch(`https://api.bontob.site/api/foods?search=${searchQuery}`)
+      fetch(`http://127.0.0.1:8000/api/foods?search=${searchQuery}`)
         .then((response) => response.json())
         .then((data) => {
           const filteredSuggestions = data
