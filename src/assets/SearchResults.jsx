@@ -16,7 +16,7 @@ const SearchResults = () => {
       setLoading(true); 
       setErrorMessage(""); 
 
-      fetch(`https://api.bontob.site/api/foods?search=${searchQuery}`)
+      fetch(`http://127.0.0.1:8000/api/foods?search=${searchQuery}`)
         .then((response) => {
           if (!response.ok) {
             throw new Error("Failed to fetch data. Please try again.");
