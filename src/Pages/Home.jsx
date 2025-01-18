@@ -15,7 +15,7 @@ function Home() {
     const fetchFoodTypes = async () => {
       try {
         const response = await axios.get(
-          "https://api.bontob.site/api/foods/typefoods"
+          "http://127.0.0.1:8000//api/foods/typefoods"
         );
         const allFoods = [
           { type_name: "ទាំងអស់", type_id: null },
@@ -34,10 +34,10 @@ function Home() {
     const fetchRecipes = async () => {
       try {
         const url = searchQuery
-          ? `https://api.bontob.site/api/foods?name_food=${searchQuery}`
+          ? `http://127.0.0.1:8000/api/foods?name_food=${searchQuery}`
           : selectedFoodType !== null
-          ? `https://api.bontob.site/api/foods?type_id=${selectedFoodType}`
-          : "https://api.bontob.site/api/foods";
+          ? `http://127.0.0.1:8000/api/foods?type_id=${selectedFoodType}`
+          : "http://127.0.0.1:8000/api/foods";
 
         const response = await axios.get(url);
         setRecipes(response.data);
