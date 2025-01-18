@@ -15,7 +15,7 @@ function Home() {
     const fetchFoodTypes = async () => {
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/foods/typefoods"
+          "https://api.bontob.site/api/foods/typefoods"
         );
         const allFoods = [
           { type_name: "ទាំងអស់", type_id: null },
