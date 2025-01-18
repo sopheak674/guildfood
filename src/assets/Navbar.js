@@ -101,7 +101,7 @@ const Navbar = () => {
               width={35}
               height={5}
             />
-            <h1 className="text-lg mt-[5px] text-Colorlogo font-bold w-[25rem]  md:w-[10rem] font-bold sm:w-[7rem]">
+            <h1 className="text-lg mt-[5px] text-Colorlogo font-bold w-[15rem]  md:w-[10rem] font-bold sm:w-[7rem]">
               Guild Foods
             </h1>
           </Link>{" "}
