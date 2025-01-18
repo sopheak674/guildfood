@@ -223,20 +223,20 @@ const Navbar = () => {
             </button>
             <span className="w-[15rem] mt-[1rem] ml-[-1rem] bg-white h-[3px]" />
             <Link to="/" onClick={handleMenuToggle}>
-              <p className="menu-item underlines-hover font-bold">Home</p>
+              <p className="menu-item underlines-hover font-bold mt-[1rem]">Home</p>
             </Link>
             <Link to="/Asia" onClick={handleMenuToggle}>
-              <p className="text-white underlines-hover font-bold">
+              <p className="text-white underlines-hover font-bold mt-[1rem]">
                 Asia Foods
               </p>
             </Link>
             <Link to="/Europe" onClick={handleMenuToggle}>
-              <p className="text-white underlines-hover font-bold">
+              <p className="text-white underlines-hover font-bold mt-[1rem]">
                 Europe Food
               </p>
             </Link>
             <Link to="/Aboutus" onClick={handleMenuToggle}>
-              <p className="text-white underlines-hover font-bold">About Us</p>
+              <p className="text-white underlines-hover font-bold mt-[1rem]">About Us</p>
             </Link>
           </div>
         </div>
