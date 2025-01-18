@@ -21,7 +21,7 @@ function Europe() {
     const fetchRegionNames = async () => {
       try {
         const response = await axios.get(
-          "https://api.bontob.site/api/countrys/regions"
+          "http://127.0.0.1:8000/api/countrys/regions"
         );
         const filteredRegions = response.data
           .filter((region) => region.continent?.continent_id === continentId)
@@ -46,7 +46,7 @@ function Europe() {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        let url = `https://api.bontob.site/api/foods?`;
+        let url = `http://127.0.0.1:8000/api/foods?`;
 
         if (selectedRegion !== null && selectedRegion !== "ទាំងអស់") {
           url += `region_id=${selectedRegion}&`;
@@ -90,7 +90,7 @@ function Europe() {
   useEffect(() => {
     const fetchCountries = async () => {
       try {
-        const response = await axios.get("https://api.bontob.site/api/countrys");
+        const response = await axios.get("http://127.0.0.1:8000/api/countrys");
         const countriesData = response.data.map((country) => ({
           country_name: country.country_name,
           country_id: country.country_id,
@@ -126,7 +126,7 @@ function Europe() {
     const fetchFoodTypes = async () => {
       try {
         const response = await axios.get(
-          "https://api.bontob.site/api/foods/typefoods"
+          "http://127.0.0.1:8000/api/foods/typefoods"
         );
         const foodTypesData = response.data.map((food) => ({
           type_id: food.type_id,
@@ -146,7 +146,7 @@ function Europe() {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        let url = `https://api.bontob.site/api/foods?`;
+        let url = `http://127.0.0.1:8000/api/foods?`;
         if (
           selectedRegion &&
           selectedRegion !== "ទាំងអស់" &&
